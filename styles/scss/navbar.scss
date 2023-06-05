@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+$font-family: "Roboto", sans-serif;
+$font-size-base: 0.925rem;
+$base-color: #097969;
+$text-dark: #3c4250;
+$border-color: #eceef3;
+
+$navbar-body-color: #fff;
+// $navbar-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.035);
+$navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 1.15rem;
+
+$navbar-link-hover: $base-color;
+$navbar-link-padding-y: 0.5rem;
+$navbar-link-padding-x: 1rem;
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: 15px;
+    right: 15px;
+  }
+}
+
+.navbar,
+.navbar > .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.navbar {
+  box-shadow: $navbar-shadow;
+  background-color: $navbar-body-color;
+  padding: $navbar-padding-y $navbar-padding-x;
+  border-bottom: 1px solid $border-color;
+
+  .container {
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+
+  .navbar-menu {
+    .navbar-nav {
+      > li {
+        > a {
+          color: $text-dark;
+          text-decoration: none;
+          display: inline-block;
+          padding: $navbar-link-padding-y $navbar-link-padding-x;
+          &:hover {
+            color: $navbar-link-hover;
+          }
+          @media (max-width: 768px) {
+            border-bottom: 1px solid $border-color;
+          }
+        }
+        &.active {
+          a {
+            color: $base-color;
+          }
+        }
+      }
+    }
+  }
+}
