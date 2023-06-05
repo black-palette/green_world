@@ -15,6 +15,10 @@ a {
   padding-right: 15px;
 }
 
+.navbar-header {
+  font-size: large;
+}
+
 .navbar,
 .navbar > .container {
   width: 100%;

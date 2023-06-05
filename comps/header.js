@@ -2,36 +2,22 @@ import Image from "next/image";
 import Navbar from "./navbar";
 
 import headCss from "../styles/header.module.css";
+import logo from "./../public/plant.jpg";
 
 const Header = () => {
   return (
     <header className={headCss.header}>
-      {/* <Image
-        className={headCss.logo}
-        src="/plant.jpg"
-        alt="me"
-        width="64"
-        height="64"
-      />
-      <h1>Green World</h1>
-      <input
-        className={headCss.searchBar}
-        type="search"
-        id="gsearch"
-        name="gsearch"
-      /> */}
-
       <nav class="navbar">
         <div class="container">
           <div class="navbar-header">
             <a href="#">
-              {/* <Image
-              className="navbar-logo"
-              src={logo}
-              width={0}
-              height={0}
-              alt="logo"
-            /> */}
+              <Image
+                className="navbar-logo"
+                src={logo}
+                width={10}
+                height={10}
+                alt="logo"
+              />
               <h1>Зелений світ</h1>
             </a>
           </div>

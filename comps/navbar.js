@@ -1,22 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-// import navCss from "../styles/navbar.module.css";
-import logo from "../public/plant.jpg";
 
 const Navbar = () => {
   return (
-    // <nav className={navCssk.navbar}>
-    //   <Link href="/" className={navCss.link}>
-    //     LINK 1
-    //   </Link>
-    //   <Link href="/" className={navCss.link}>
-    //     LINK 2
-    //   </Link>
-    //   <Link href="/" className={navCss.link}>
-    //     LINK 3
-    //   </Link>
-    // </nav>
-
     <nav class="navbar">
       <div class="container">
         <div class="navbar-menu">
