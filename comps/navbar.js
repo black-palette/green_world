@@ -1,51 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import styles from "../styles/navbar.module.scss";
+
 const Navbar = () => {
   return (
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-menu">
-          <ul class="navbar-nav">
-            <li class="active">
-              <a href="#">Посилання1</a>
-            </li>
-            <li>
-              <a href="#">Посилання2</a>
-            </li>
-            <li>
-              <a href="#">Посилання3</a>
-            </li>
-            <li>
-              <a href="#">Посилання4</a>
-            </li>
-          </ul>
+    <nav className={styles.navbar}>
+      <div className={styles['navbar-list']}>
+          <Link className={styles.link} href='#'>Акції</Link>
+          <Link className={styles.link} href='#'>Добрива</Link>
+          <Link className={styles.link} href='#'>Для Собак</Link>
+          <Link className={styles.link} href='#'>Для Котів</Link>
+          <Link className={styles.link} href='#'>Новинки</Link>
+          <Link className={styles.link} href='#'>Бренди</Link>
+          
         </div>
-      </div>
     </nav>
   );
 };
 
 export default Navbar;
-
-{
-  /* <div class="navbar-menu">
-          <ul class="navbar-nav">
-            <li class="active">
-              <a href="#">Головна</a>
-            </li>
-            <li>
-              <a href="#">Категорії</a>
-            </li>
-            <li>
-              <a href="#">Про нас</a>
-            </li>
-            <li>
-              <a href="#">Контакти</a>
-            </li>
-            <li>
-              <a href="#">Signin</a>
-            </li>
-          </ul>
-        </div> */
-}

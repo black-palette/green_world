@@ -1,52 +1,44 @@
-import Image from "next/image";
-import Navbar from "./navbar";
+import Link from "next/link";
+import Image from 'next/image'
 
-import headCss from "../styles/header.module.css";
-import logo from "./../public/plant.jpg";
+import s from "../styles/header.module.scss";
 
 const Header = () => {
   return (
-    <header className={headCss.header}>
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="#">
-              <Image
-                className="navbar-logo"
-                src={logo}
-                width={10}
-                height={10}
-                alt="logo"
-              />
-              <h1>Зелений світ</h1>
-            </a>
-          </div>
-
-          <div class="navbar-menu">
-            <ul class="navbar-nav">
-              <li class="active">
-                <a href="#">Головна</a>
-              </li>
-              <li>
-                <a href="#">Категорії</a>
-              </li>
-              <li>
-                <a href="#">Про нас</a>
-              </li>
-              <li>
-                <a href="#">Контакти</a>
-              </li>
-              <li>
-                <a href="#">Увійти</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <header className={s.header}>
+    <div className={s.header}>
+    <Image className={s.menu} src='/menu.svg' alt="logo" width={30} height={30}/>
+      <div className={s['header-head']}>
+      
+        <Image className={s.logo} src='/logo.svg' alt="logo" width={30} height={30}/>
+        <Link href='#'>
+          <h1>Зелений світ</h1>
+        </Link>
+        <form className={s['search-form']} action='' method="">
+        <input type='search' name='search' placeholder="Знайти товар..."></input>
+        <button type='submit'><img src='/search.svg'></img></button>
+        </form>
+        
+      </div>
+  
+      <nav className={s.navbar}>
+        <Link className={s.link} href="#">
+        <Image src='/shopping-cart.svg' alt="shopping cart icon" width={50} height={50}></Image>
+        </Link>
+        <Link className={s.link} href="#">
+        <Image src='/user.svg' alt="profile icon" width={50} height={50}></Image>
+        </Link>
       </nav>
-
-      <Navbar />
-    </header>
+    </div>
+  </header>
+  
   );
 };
 
 export default Header;
+
+
+
+
+
+

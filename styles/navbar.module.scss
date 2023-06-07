@@ -1,0 +1,35 @@
+@use 'variables' as v;
+
+.navbar-list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$body-color;
+    
+    width: 100%;
+    height: 4vh;
+    border-bottom: 1px solid v.$border-color;
+    box-shadow: v.$shadow;
+
+    
+
+    margin: {
+        
+    }       
+    
+
+    .link {
+        text-decoration: none;
+        color: v.$text-dark;
+        font-family: v.$font-family-overpass;
+        font-weight: lighter;
+        
+        
+        padding: {
+            left: 1vw;
+            right: 1vw;
+        }
+    }
+    
+
+}

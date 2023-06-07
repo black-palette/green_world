@@ -1,0 +1,17 @@
+@use 'variables' as v;
+
+.pre-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: v.$body-color;
+    border-bottom: 1px solid v.$border-color;
+    padding: .5vh .5vw;
+    
+    .link {
+        color: v.$text-dark;
+        font-family: v.$font-family-overpass;
+        font-size: 0.9rem;
+    }
+}
