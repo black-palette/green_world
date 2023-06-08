@@ -5,22 +5,20 @@ import s from "../styles/main/category-card.module.scss";
 
 const CategoryCard = ({ name, link = "#", imagePath }) => {
   return (
-    <div className={s.card}>
-      <Link className={s.link} href={link}>
+    <Link className={s.link} href={link}>
+      <div className={s.card}>
+        <Image
+          className={s.image}
+          src={imagePath}
+          alt="category image"
+          width={30}
+          height={30}
+        ></Image>
         <div className={s["sub-card"]}>
-          <Image
-            className={s.image}
-            src={imagePath}
-            alt="category image"
-            width={30}
-            height={30}
-          ></Image>
-          <div className={s.nm}>
-            <a className={s.name}>{name}</a>
-          </div>
+          <a className={s.name}>{name}</a>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
 
     //         <div className={s.card}>
     // <h1 className={s['entry-title']}>

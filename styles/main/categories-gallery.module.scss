@@ -1,24 +1,23 @@
-@use '../global/variables' as v;
+@use "../global/variables" as v;
 
 .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 3vh;
+
+  .sub-gallery {
+    margin-top: 10vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 3vh;
+  }
 
-    .first {
-        margin-top: 10vh;
-    }   
-
-    .categories {
-        position: absolute;
-        top: 3vh;
-        left: 5vw;
-        border-bottom: 1px solid v.$border-color;
-        font-size: 2rem;
-        font-family: v.$font-family-overpass;
-    }
-
-    
+  .categories {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+    border-bottom: 1px solid v.$border-color;
+    font-size: 2rem;
+    font-family: v.$font-family-overpass;
+  }
 }
