@@ -1,7 +1,6 @@
-@use '../global/variables' as v;
+@use "../global/variables" as v;
 
-.header-head{
-  
+.header-head {
   display: inline-flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -24,15 +23,14 @@
 .header {
   width: 100%;
   height: 10vh;
-  
+
   display: inline-flex;
   flex-wrap: nowrap;
   align-items: center;
-  
-  
+
   box-shadow: v.$shadow;
   background-color: v.$body-color;
-  
+
   padding: v.$navbar-padding-y v.$navbar-padding-x;
   border-bottom: 1px solid v.$border-color;
 
@@ -46,7 +44,7 @@
       margin: 0 1vw;
     }
   }
-   
+
   h1 {
     color: v.$brand-color;
     font-size: 3rem;
@@ -54,61 +52,53 @@
     font-weight: 900;
     white-space: nowrap;
   }
-  
-  .header-body{
+
+  .header-body {
     .search-bar {
       // width: 100%;
       width: 40vw;
       height: 6vh;
       max-width: 700px;
-      
-    
-      background: rgba(110,   222,146, 0.2);
+
+      background: rgba(110, 222, 146, 0.2);
       border-radius: 10vw;
-    
+
       margin: {
         left: auto;
         right: 1vw;
       }
       padding: 0 2vw;
-    
+
       display: flex;
       align-items: center;
       backdrop-filter: blur(4px) saturate(180%);
-      
+
       input {
         width: 100%;
-        
+
         background: transparent;
         flex: 1;
         border: 0;
         outline: 0;
         font-size: 20px;
         color: v.$text-dark;
-    
+
         ::placeholder {
-          font-family: 'Courier New', Courier, monospace;
-        } 
+          font-family: "Courier New", Courier, monospace;
+        }
       }
-    
+
       button {
         position: relative;
-        
+
         border-radius: 50%;
-        border: 0; 
+        border: 0;
         width: 5vh;
         height: 5vh;
-        
+
         background: v.$body-color;
         cursor: pointer;
       }
-    
     }
   }
-  
 }
-
-
-
-
-

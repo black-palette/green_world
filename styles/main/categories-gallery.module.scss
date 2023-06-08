@@ -1,4 +1,5 @@
 @use "../global/variables" as v;
+@use "../global/underline";
 
 .gallery {
   display: flex;
@@ -12,11 +13,11 @@
     display: flex;
   }
 
-  .categories {
+  .heading {
     position: absolute;
     top: 3vh;
     left: 5vw;
-    border-bottom: 1px solid v.$border-color;
+    // border-bottom: 1px solid v.$border-color;
     font-size: 2rem;
     font-family: v.$font-family-overpass;
   }

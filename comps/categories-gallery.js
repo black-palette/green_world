@@ -5,8 +5,9 @@ import s from "../styles/main/categories-gallery.module.scss";
 const CategoriesGallery = () => {
   return (
     <div className={s.gallery}>
-      <h1 className={s.categories}>Категорії товарів</h1>
-
+      <h1 className={`${s.heading} ${s["underline-magical"]}`}>
+        Категорії товарів
+      </h1>
       <div className={s["sub-gallery"]}>
         <CategoryCard
           name="plant care"
