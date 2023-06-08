@@ -1,0 +1,22 @@
+@use '../global/variables' as v;
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    .first {
+        margin-top: 8vh;
+    }   
+
+    .categories {
+        position: absolute;
+        top: 2vh;
+        left: 5vw;
+        border-bottom: 1px solid v.$border-color;
+        font-size: 2rem;
+        font-family: v.$font-family-overpass;
+    }
+}

@@ -1,0 +1,34 @@
+@use '../global/variables' as v;
+
+.link {
+    display: inline-flex;
+}
+
+.product-card {
+    // background-color: v.$body-color;
+    width: 15vw;
+    height: 25vh;
+    box-shadow: v.$shadow;
+    border: 1px solid v.$border-color;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    
+    h1 {
+        color: v.$text-dark;
+    text-align: center;
+    font-family: v.$font-family-overpass;
+    }
+
+    .image {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+.border {
+    border: 1px solid v.$body-color;
+    border-radius: 1vw;
+    padding: 0.2vh 0.2vw;
+}

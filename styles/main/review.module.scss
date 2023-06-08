@@ -1,0 +1,43 @@
+@use '../global/variables' as v;
+
+
+.review {
+    padding: 0.8rem .5rem;
+    border-radius: 0.8rem;
+    box-shadow: v.$shadow-intense;
+    max-width: 15vw;
+    max-height: 15vh;
+    margin: 1rem;
+
+    .metadata{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1vh 1vh;
+        border-bottom: 2px solid v.$border-color;
+        
+        .user-icon {
+            box-shadow: v.$shadow-intense;
+            border-radius:100%;
+            width: 3vw;
+            height: 3vw;
+            
+        }
+
+        .user-info {
+            margin-left: 1rem;
+            font-family: v.$font-family-overpass;
+            .date {
+                font-size: smaller;
+            }
+        }
+    }
+
+    .info {
+        padding: 1vh 1vh;
+        .text {
+            font-family: v.$font-family-roboto;
+
+        }
+    }
+}

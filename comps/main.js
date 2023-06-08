@@ -1,8 +1,21 @@
+
+import CategoriesGallery from "./categories-gallery";
+import ReviewGallery from "./review-gallery";
+import Test from "./test";
+import Highlighted from "./highlighted";
+
+// import s from "../styles/header.module.scss";
+
 const Main = () => {
+  
   return (
-    <main>
-      <section className="discont"></section>
-      <section className="products"></section>
+    <main>      
+      <CategoriesGallery/>
+      <ReviewGallery/>
+      <Test/>
+      <Highlighted/>
+      
+      
     </main>
   );
 };

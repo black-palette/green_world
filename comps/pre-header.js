@@ -1,5 +1,5 @@
 import Link from "next/link"
-import s from "../styles/pre-header.module.scss";
+import s from "../styles/header/pre-header.module.scss";
 
 const PreHeader = () => {
     return (  

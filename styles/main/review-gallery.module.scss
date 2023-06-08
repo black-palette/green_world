@@ -1,0 +1,15 @@
+@use '../global/variables' as v;
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    padding: 3vh;
+    justify-content: center;
+    
+    
+    .review {
+
+    }
+
+}

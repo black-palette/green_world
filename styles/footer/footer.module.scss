@@ -1,0 +1,81 @@
+@use '../global/variables' as v;
+
+.footer {
+ width: 100%;
+//  background-color: v.$body-color;
+ border: 1px solid v.$border-color;
+ display: flex;
+ padding: 2vh 2vw;
+
+ h1 {
+    position: absolute;
+    top: 0;
+}
+
+ .google-map {
+    
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+
+    
+
+    iframe {
+        margin-top: 3vh;
+        box-shadow: v.$shadow-intense;
+        height: 70%;
+        width: 70%;
+    }
+ }
+
+ .contacts {
+    border-right: 1px solid v.$border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+
+    position: relative;
+
+    
+    .phone, .mail, .map {
+        display: flex;
+        .image {
+            width: 2vw;
+            height: 2vh;
+        }
+    }
+  
+
+ }
+
+ .work-time {
+
+    border-right: 1px solid v.$border-color;
+    position: relative;
+    padding: 0 2vw;
+
+    display: flex;
+    margin: {
+        left: 5vw;
+        right: 5vw;
+    }
+    align-items: center;
+    justify-content: center;
+    
+    .times {
+        display: block;
+        margin-top: 3vh;
+    }
+
+    .clock {
+        width: 12vw;
+        height: 12vh;
+        margin-top: 3vh;
+        
+    }
+
+    
+ } 
+}
