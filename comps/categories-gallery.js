@@ -6,7 +6,7 @@ const CategoriesGallery = () => {
     return (  
         
 <div className={s.gallery}>
-    <h1 className={s.categories}>Categories</h1>
+    <h1 className={s.categories}>Категорії товарів</h1>
     
     <div className={s['sub-gallery']}>
         <div className={s.first}>
