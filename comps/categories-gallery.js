@@ -8,10 +8,6 @@ const CategoriesGallery = () => {
       <h1 className={`${s.heading} ${s["underline-magical"]}`}>
         Категорії товарів
       </h1>
-<<<<<<< HEAD
-
-=======
->>>>>>> 00f3663a0d164300677c5a84bf088fd410c838ec
       <div className={s["sub-gallery"]}>
         <CategoryCard
           name="plant care"
