@@ -1,14 +1,26 @@
 .underline-magical {
+<<<<<<< HEAD
   background-image: linear-gradient(
     120deg,
     #4bc455 0%,
     rgba(0, 0, 0, 0.05) 100%
   );
+=======
+>>>>>>> 00f3663a0d164300677c5a84bf088fd410c838ec
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.4s ease-in-out;
 
+<<<<<<< HEAD
+=======
+  background-image: linear-gradient(
+    60deg,
+    #8fdb6e 0%,
+    rgba(110, 222, 146, 0.2) 100%
+  );
+
+>>>>>>> 00f3663a0d164300677c5a84bf088fd410c838ec
   &:hover {
     background-size: 100% 88%;
   }
