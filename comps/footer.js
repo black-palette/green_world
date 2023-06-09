@@ -69,6 +69,15 @@ const Footer = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        {/* <div className={s["additional-info"]}>
+          <Link className={s.link} href="#">
+            Про нас
+          </Link>
+
+          <Link className={s.link} href="#">
+            Доставка та оплата
+          </Link>
+        </div> */}
       </div>
     </footer>
   );
