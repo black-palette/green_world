@@ -4,16 +4,17 @@ import Header from "../comps/header";
 import PreHeader from "../comps/pre-header";
 import Footer from "../comps/footer";
 
+import { ProductContext } from "../back-end/context/productContext";
 
 const Home = () => {
   return (
-    <>
-    <PreHeader/>
-    <Header/>
+    <ProductContext>
+      <PreHeader />
+      <Header />
       <Navbar />
       <Main />
-      <Footer/>
-    </>
+      <Footer />
+    </ProductContext>
   );
 };
 
