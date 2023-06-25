@@ -1,0 +1,50 @@
+@use "../global/variables" as v;
+
+.header-body {
+  .search-bar {
+    // width: 100%;
+    width: 40vw;
+    height: 6vh;
+    max-width: 700px;
+
+    background: rgba(110, 222, 146, 0.2);
+    border-radius: 10vw;
+
+    margin: {
+      left: auto;
+      right: 1vw;
+    }
+    padding: 0 2vw;
+
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(4px) saturate(180%);
+
+    input {
+      width: 100%;
+
+      background: transparent;
+      flex: 1;
+      border: 0;
+      outline: 0;
+      font-size: 20px;
+      color: v.$text-dark;
+
+      ::placeholder {
+        font-family: "Courier New", Courier, monospace;
+      }
+    }
+
+    button {
+      position: relative;
+
+      border-radius: 50%;
+      border: 0;
+      width: 5vh;
+      height: 5vh;
+
+      background: v.$body-color;
+      cursor: pointer;
+    }
+  }
+}

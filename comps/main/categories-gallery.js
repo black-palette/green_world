@@ -1,6 +1,6 @@
 import CategoryCard from "./category-card";
 
-import s from "../styles/main/categories-gallery.module.scss";
+import s from "../../styles/main/categories-gallery.module.scss";
 
 const CategoriesGallery = () => {
   return (

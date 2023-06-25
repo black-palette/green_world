@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { ProductContextProvider } from "../back-end/context/productContext";
+
 import "../styles/global/globals.scss";
 
 const App = ({ Component, pageProps }) => {
@@ -14,7 +16,9 @@ const App = ({ Component, pageProps }) => {
         />
         <title> Зелений світ - Магазин добрив і зоотоварів</title>
       </Head>
-      <Component {...pageProps} />
+      <ProductContextProvider>
+        <Component {...pageProps} />
+      </ProductContextProvider>
     </>
   );
 };

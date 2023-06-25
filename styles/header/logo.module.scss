@@ -1,0 +1,21 @@
+@use "../global/variables" as v;
+
+.brand-heading {
+  position: relative;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+      height: 100%;
+      width: 4vw;
+    }
+  }
+
+  h1 {
+    color: v.$brand-color;
+    font: 900 3em v.$font-family-caveat;
+    white-space: nowrap;
+  }
+}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import s from "../styles/main/category-card.module.scss";
+import s from "../../styles/main/category-card.module.scss";
 
 const CategoryCard = ({ name, link = "#", imagePath }) => {
   return (

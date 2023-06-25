@@ -1,6 +1,6 @@
 import Review from "./review";
 
-import s from "../styles/main/review-gallery.module.scss";
+import s from "../../styles/main/review-gallery.module.scss";
 
 const ReviewGallery = () => {
   return (

@@ -2,6 +2,7 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 
+import { ProductContextProvider } from "../back-end/context/productContext";
 import Product from "../comps/product";
 import AddProduct from "../comps/add_product";
 import { useProductContext } from "../back-end/hooks/useProductContext";
