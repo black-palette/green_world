@@ -11,9 +11,15 @@ import s from "../../styles/header/header.module.scss";
 const Header = () => {
   return (
     <header className={s.header}>
-      <Logo />
-      <SeacrhBar />
-      <ProfileDropdown />
+      <div className={s.logo}>
+        <Logo />
+      </div>
+      <div className={`${s["search-bar"]}`}>
+        <SeacrhBar />
+      </div>
+      <div className={`${s["profile-dropdown-menu"]}`}>
+        <ProfileDropdown />
+      </div>
     </header>
   );
 };

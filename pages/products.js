@@ -3,8 +3,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 import { ProductContextProvider } from "../back-end/context/productContext";
-import Product from "../comps/product";
-import AddProduct from "../comps/add_product";
+import Product from "../comps/main/product";
+import AddProduct from "../comps/main/add_product";
 import { useProductContext } from "../back-end/hooks/useProductContext";
 
 import s from "../styles/main/products.module.scss";

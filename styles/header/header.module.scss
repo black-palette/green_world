@@ -18,19 +18,8 @@
   background-color: v.$body-color;
 
   padding: v.$navbar-padding-y v.$navbar-padding-x;
-  border-bottom: 1px solid v.$border-color;
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: {
-      left: auto;
-      right: auto;
-    }
-
-    .link {
-      margin: 0 1vw;
-    }
+  .logo {
+    margin-right: 3vw;
   }
 }
